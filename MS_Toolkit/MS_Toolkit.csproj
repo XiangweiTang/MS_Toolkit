@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="CutAudio.cs" />
     <Compile Include="DictGenerator.cs" />
     <Compile Include="ExtractTextGrid.cs" />
+    <Compile Include="Line.cs" />
     <Compile Include="MergeAudio.cs" />
     <Compile Include="MTask.cs" />
     <Compile Include="Program.cs" />
