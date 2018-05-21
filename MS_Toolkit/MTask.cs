@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml;
 
 namespace MS_Toolkit
 {
@@ -11,15 +10,7 @@ namespace MS_Toolkit
     {
         public MTask() { }
 
-        public void LoadConfig(string path)
-        {
-
-        }
-
-        protected virtual void LoadLocalConfig(XmlNode localTaskNode)
-        {
-
-        }
+        public abstract void LoadConfig(string configPath);
 
         public abstract void Run();
     }

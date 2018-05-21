@@ -46,14 +46,14 @@ namespace MS_Toolkit
 
         }
 
-        protected override void LoadLocalConfig(XmlNode localTaskNode)
-        {
-            
-        }
-
         public override void Run()
         {
             ProcessFolder(Cfg.InputFolder, Cfg.OutputFolder);
+        }
+
+        public override void LoadConfig(string configPath)
+        {
+            Cfg.LoadConfig(configPath);
         }
 
         static Regex CreateReg(string template, string value)
