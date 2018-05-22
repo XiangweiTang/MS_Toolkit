@@ -23,7 +23,6 @@ namespace MS_Toolkit
 
         protected override void LoadLocalConfig(XmlNode localTaskNode)
         {
-            base.LoadLocalConfig(localTaskNode);
         }
 
         private void CutSingleAudio(string audioPath, string lineListPath)

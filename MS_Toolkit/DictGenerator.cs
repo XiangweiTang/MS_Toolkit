@@ -15,7 +15,6 @@ namespace MS_Toolkit
         }
         protected override void LoadLocalConfig(XmlNode localTaskNode)
         {
-            base.LoadLocalConfig(localTaskNode);
         }
 
         List<string> MismatchList = new List<string>();

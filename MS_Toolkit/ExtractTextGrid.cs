@@ -51,9 +51,9 @@ namespace MS_Toolkit
             ProcessFolder(Cfg.InputFolder, Cfg.OutputFolder);
         }
 
-        public override void LoadConfig(string configPath)
+        protected override void LoadLocalConfig(XmlNode taskNode)
         {
-            Cfg.LoadConfig(configPath);
+            
         }
 
         static Regex CreateReg(string template, string value)

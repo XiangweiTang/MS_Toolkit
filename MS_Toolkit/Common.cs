@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.IO;
 
 namespace MS_Toolkit
 {
@@ -24,6 +25,17 @@ namespace MS_Toolkit
                 proc.StartInfo = info;
                 proc.Start();
                 proc.WaitForExit();
+            }
+        }
+
+        public static byte[] ReadBytes(string path, int n)
+        {
+            using(FileStream fs=new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                using (BinaryReader br = new BinaryReader(fs))
+                {
+                    return br.ReadBytes(n);
+                }
             }
         }
     }
